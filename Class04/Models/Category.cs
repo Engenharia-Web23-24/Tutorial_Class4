@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Class04.Models
 {
@@ -15,6 +16,10 @@ namespace Class04.Models
         [MaxLength(256, ErrorMessage ="{0} length can not exceed {1} characters")]
         public string? Description { get; set; }
 
-        public Boolean State { get; set; } = true;
+        //homework
+        [DisplayName("Creation Date")]
+        public DateTime Date { get; set; } = DateTime.Now; // default value
+
+        public Boolean State { get; set; } = true; //default value
     }
 }

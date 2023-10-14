@@ -7,9 +7,9 @@ using Class04.Models;
 
 namespace Class04.Data
 {
-    public class Aula04_EWPL1_Context : DbContext
+    public class Class04Context : DbContext
     {
-        public Aula04_EWPL1_Context (DbContextOptions<Aula04_EWPL1_Context> options)
+        public Class04Context(DbContextOptions<Class04Context> options)
             : base(options)
         {
         }

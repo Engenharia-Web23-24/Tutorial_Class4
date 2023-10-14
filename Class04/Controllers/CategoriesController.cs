@@ -12,9 +12,9 @@ namespace Class04.Controllers
 {
     public class CategoriesController : Controller
     {
-        private readonly Aula04_EWPL1_Context _context;
+        private readonly Class04Context _context;
 
-        public CategoriesController(Aula04_EWPL1_Context context)
+        public CategoriesController(Class04Context context)
         {
             _context = context;
         }
@@ -88,7 +88,7 @@ namespace Class04.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,State")] Category category)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Date,State")] Category category)
         {
             if (id != category.Id)
             {

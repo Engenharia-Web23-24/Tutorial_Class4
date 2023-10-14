@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Class04.Migrations
 {
-    [DbContext(typeof(Aula04_EWPL1_Context))]
+    [DbContext(typeof(Class04Context))]
     [Migration("20231010085011_FirstStep")]
     partial class FirstStep
     {
