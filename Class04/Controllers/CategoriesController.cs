@@ -24,7 +24,7 @@ namespace Class04.Controllers
         {
               return _context.Category != null ? 
                           View(await _context.Category.ToListAsync()) :
-                          Problem("Entity set 'Aula04_EWPL1_Context.Category'  is null.");
+                          Problem("Entity set 'Class04Context.Category'  is null.");
         }
 
         // GET: Categories/Details/5
@@ -143,7 +143,7 @@ namespace Class04.Controllers
         {
             if (_context.Category == null)
             {
-                return Problem("Entity set 'Aula04_EWPL1_Context.Category'  is null.");
+                return Problem("Entity set 'Class04Context.Category'  is null.");
             }
             var category = await _context.Category.FindAsync(id);
             if (category != null)
